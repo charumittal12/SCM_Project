@@ -21,3 +21,9 @@ def convert(self, from_currency, to_currency, amount):
 url = 'https://api.exchangerate-api.com/v4/latest/USD'
 converter = RealTimeCurrencyConverter(url)
 print(converter.convert('INR','USD',100))
+if _name_ == '_main_':
+    url = 'https://api.exchangerate-api.com/v4/latest/USD'
+    converter = RealTimeCurrencyConverter(url)
+ 
+    App(converter)
+    mainloop()
